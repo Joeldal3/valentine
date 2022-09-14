@@ -11,10 +11,10 @@
     <img src="images/Valentine.jpeg" alt="Image saying will you be my valentine?" class="center">
     <form>
         <p>Enter your answer here:</p>
-    <input type="checkbox" name="veggies" id="veg1" value="Yes" onclick="return       ValidateSelection();">
+    <input class="container" type="checkbox" name="veggies" id="veg1" value="Yes" onclick="return checked="checked" <span class="checkmark"></span>     ValidateSelection();">
     <label for="veg1">Yes</label>
-    <input form="myForm" type="checkbox" name="veggies" id="veg2"  value="No" onclick="return ValidateSelection();"> 
-    <label for="veg2">Fuck Yes!</label>
+    <inpu class="container" t form="myForm" type="checkbox" name="veggies" id="veg2"  value="No" onclick="return checked="checked" <span class="checkmark"></span> ValidateSelection();"> 
+    <label for="veg2">Yes of course!</label>
     </form>
     <h2> Also you can't actually check the box. Idk how to do that yet so just text me babe ;)</h2>
     <style>
@@ -87,6 +87,12 @@ label{
   margin-right: auto;
   cursor: pointer;
   width: 605px;
+}
+        .container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+        .container input:checked ~ .checkmark:after {
+  display: block;
 }
 
         
